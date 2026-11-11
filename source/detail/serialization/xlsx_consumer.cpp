@@ -1932,7 +1932,7 @@ void xlsx_consumer::read_office_document(const std::string &content_type) // CT_
                 file_version.lowest_edited = parser().attribute<std::size_t>("lowestEdited");
             }
 
-            if (parser().attribute_present("lowestEdited"))
+            if (parser().attribute_present("rupBuild"))
             {
                 file_version.rup_build = parser().attribute<std::size_t>("rupBuild");
             }
